@@ -1,0 +1,78 @@
+.about {
+    margin-top: 16px; /* Slightly increased for better spacing */
+    padding: 20px; /* Added padding for better alignment */
+    /* background: linear-gradient(135deg, #bdbf9945, #c3c126); */
+
+}
+
+.about-title {
+    padding: 20px 30px; /* Increased padding for better proportions */
+    border-radius: 10px; /* Smoothed corners */
+    /* background-color: #f5df4e; */
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.5px; /* Slightly more spacing for elegance */
+    animation: fadeIn 1.2s ease-in-out;
+    font-size: 2rem; /* Made font size larger */
+    color: #333;
+    text-align: center; /* Center aligned for consistency */
+    /* background: linear-gradient(135deg, #bdbf9945, #c3c126); */
+
+}
+
+.about-heading {
+    font-size: 2.4rem; /* Enhanced font size */
+    font-family: 'Georgia', serif; /* More elegant serif font */
+    font-weight: bold;
+    color: #444; /* Slightly darker for contrast */
+    text-align: center;
+    animation: slideInFromTop 1s ease-in-out;
+    margin-bottom: 20px; /* Added spacing below */
+}
+
+.about-section {
+    animation: fadeIn 1.5s ease-in-out;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Softer shadow for depth */
+    padding: 20px; /* Added padding inside */
+    background-color: #fcf9f9; /* White background for contrast */
+    border-radius: 10px; /* Smoothed edges */
+
+}
+
+.about-text {
+    margin-bottom: 20px; /* Added spacing between sections */
+}
+
+.about-para, .about-para1 {
+    font-size: 1.6rem; /* Increased readability */
+    line-height: 1.8; /* Better line spacing */
+    color: #666; /* Softer text color for less strain */
+}
+
+.about-image .h-28 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333; /* Text color for better contrast */
+}
+
+.connect-me {
+    padding-top: 20px; /* Added padding for spacing */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    color: #555; /* Softer color for subtlety */
+}
+
+.connect-me span {
+    font-weight: bold;
+    color: #000; /* Black for emphasis */
+}
+.connect-me :hover{
+    cursor: pointer;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Softer shadow for depth */
+    ;
+    animation: fadeIn 1.2s ease-in-out;
+/* background-color: #f5df4e; */
+}

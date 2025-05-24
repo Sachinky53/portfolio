@@ -1,0 +1,111 @@
+#background-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('background-image.jpg');
+    background-size: cover;
+    
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    min-height: 100vh;
+}
+
+.portfolio-details {
+    max-width: 600px;
+}
+.portfolio-details h2{
+    font-size: 4rem;
+    font-family: serif;
+}
+
+.detail-text  {
+    padding: 15px;
+    font-size: 2.5rem;
+    color: #0aacac;
+    margin-bottom: 10px;
+}
+
+.typed-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: aliceblue;
+
+    height: 40px; /* Ensures proper alignment */
+}
+
+.location-text  {
+    font-size: 1.2rem;
+    color: aliceblue;
+
+    margin-top: 10px;
+}
+
+/* Buttons */
+.my-work-btn {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.my-work-btn button {
+    background-color:black;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.my-work-btn button:hover {
+    background-color: rgba(41, 37, 37, 0.676);
+}
+
+.contact-me a {
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-me a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Profile Image */
+.profile-image img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .profile-image {
+        margin-top: 20px;
+    }
+
+    .my-work-btn {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

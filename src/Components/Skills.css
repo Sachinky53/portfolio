@@ -1,0 +1,162 @@
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+.skill-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill-container p {
+  padding: 15px 25px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  animation: fadeIn 1.2s ease-in-out;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  /* align-content: center; */
+  align-items: center;
+  background: #090a0a;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.skill-card:hover::before {
+  opacity: 1;
+}
+
+.skill-card:hover {
+  transform: scale(1.08);
+  box-shadow: 0 10px 20px rgba(255, 105, 180, 0.5);
+}
+
+.logo {
+  display: block;
+  width: 127px;
+  height: 127px;
+  background: white;
+  border-radius: 50%;
+  position: relative;
+  animation: pulse 2s infinite;
+}
+
+.skill-name  {
+  border-radius: 8px;
+  padding: 10px;
+  filter: drop-shadow(5px 5px 10px rgb(192, 115, 48));
+  color: #1ae6e6;
+  /* background: white; */
+  animation: pulse 2s infinite;
+}
+.resume-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.resume-btn button {
+  border: 2px solid black;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.resume-btn button:hover {
+  background-color: hsl(240, 13%, 3%);
+  color: wheat;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Ripple Effect */
+.resume-btn button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: width 0.4s ease, height 0.4s ease, opacity 0.4s ease;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.resume-btn button:hover::before {
+  width: 0;
+  height: 0;
+  opacity: 1;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.skill-card:hover {
+  animation: float 1s infinite ease-in-out;
+}

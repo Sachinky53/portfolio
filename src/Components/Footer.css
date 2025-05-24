@@ -1,0 +1,134 @@
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 50px 10%;
+    background-color: #181818;
+    opacity: 6;
+    color: white;
+    flex-wrap: wrap;
+}
+.left-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ 
+.left-footer, .right-footer {
+    width: 45%;
+
+}
+
+.left-footer-heading, .right-footer-heading {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-para {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.footer-loaction, .footer-call {
+    font-size: 18px;
+    margin: 10px 0;
+    color: white;
+
+}
+.footer-loaction label{
+    font-size:22px ;
+
+    color: white;
+
+}
+.footer-call label{
+    font-size:22px ;
+    color: #ddd;
+
+} 
+
+.footer-social-media-icon .icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.instagram-icons, .github-icons, .linkdin-icons {
+    font-size: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.instagram-icons:hover, .github-icons:hover, .linkdin-icons:hover {
+    transform: scale(1.2);
+    color: #ff5722;
+}
+
+.right-footer form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-name, .form-email-address, .help-section {
+    margin-bottom: 15px;
+}
+
+.form-name, .form-email-address, .help-section label {
+    font-size: 15px;
+    font-weight: 500;
+    color: #bbb;
+}
+
+input, textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ff5722;
+    padding: 8px;
+    font-size: 14px;
+    color: white;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+.send-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.send-btn:hover {
+    background: #e64a19;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .left-footer, .right-footer {
+        width: 100%;
+    }
+
+    .footer-social-media-icon .icons {
+        justify-content: center;
+    }
+}
