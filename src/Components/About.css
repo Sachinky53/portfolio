@@ -1,78 +1,130 @@
 .about {
-    margin-top: 16px; /* Slightly increased for better spacing */
-    padding: 20px; /* Added padding for better alignment */
-    /* background: linear-gradient(135deg, #bdbf9945, #c3c126); */
-
+  margin-top: 16px;
+  padding: 20px;
+  width: 100%;
 }
 
 .about-title {
-    padding: 20px 30px; /* Increased padding for better proportions */
-    border-radius: 10px; /* Smoothed corners */
-    /* background-color: #f5df4e; */
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1.5px; /* Slightly more spacing for elegance */
-    animation: fadeIn 1.2s ease-in-out;
-    font-size: 2rem; /* Made font size larger */
-    color: #333;
-    text-align: center; /* Center aligned for consistency */
-    /* background: linear-gradient(135deg, #bdbf9945, #c3c126); */
-
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  animation: fadeIn 1.2s ease-in-out;
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
 }
 
 .about-heading {
-    font-size: 2.4rem; /* Enhanced font size */
-    font-family: 'Georgia', serif; /* More elegant serif font */
-    font-weight: bold;
-    color: #444; /* Slightly darker for contrast */
-    text-align: center;
-    animation: slideInFromTop 1s ease-in-out;
-    margin-bottom: 20px; /* Added spacing below */
+  font-size: 2.4rem;
+  font-family: 'Georgia', serif;
+  font-weight: bold;
+  color: #444;
+  text-align: center;
+  animation: slideInFromTop 1s ease-in-out;
+  margin-bottom: 20px;
 }
 
 .about-section {
-    animation: fadeIn 1.5s ease-in-out;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Softer shadow for depth */
-    padding: 20px; /* Added padding inside */
-    background-color: #fcf9f9; /* White background for contrast */
-    border-radius: 10px; /* Smoothed edges */
-
+  animation: fadeIn 1.5s ease-in-out;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  background-color: #fcf9f9;
+  border-radius: 10px;
 }
 
 .about-text {
-    margin-bottom: 20px; /* Added spacing between sections */
+  margin-bottom: 20px;
 }
 
-.about-para, .about-para1 {
-    font-size: 1.6rem; /* Increased readability */
-    line-height: 1.8; /* Better line spacing */
-    color: #666; /* Softer text color for less strain */
+.about-para,
+.about-para1 {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #666;
 }
 
+/* Image or logo section */
 .about-image .h-28 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #333; /* Text color for better contrast */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  margin-bottom: 20px;
 }
 
+/* Contact or links */
 .connect-me {
-    padding-top: 20px; /* Added padding for spacing */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    text-align: center;
-    color: #555; /* Softer color for subtlety */
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  color: #555;
+  gap: 15px;
 }
 
 .connect-me span {
-    font-weight: bold;
-    color: #000; /* Black for emphasis */
+  font-weight: bold;
+  color: #000;
+  transition: all 0.3s ease;
 }
-.connect-me :hover{
-    cursor: pointer;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); /* Softer shadow for depth */
-    ;
-    animation: fadeIn 1.2s ease-in-out;
-/* background-color: #f5df4e; */
+
+.connect-me span:hover {
+  cursor: pointer;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* ----------------------------
+   Responsive: Tablet
+----------------------------- */
+@media (max-width: 1024px) {
+  .about-title {
+    font-size: 1.8rem;
+    padding: 15px;
+  }
+
+  .about-heading {
+    font-size: 2rem;
+  }
+
+  .about-para,
+  .about-para1 {
+    font-size: 1.4rem;
+  }
+}
+
+/* ----------------------------
+   Responsive: Mobile
+----------------------------- */
+@media (max-width: 600px) {
+  .about {
+    padding: 15px 10px;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
+  .about-heading {
+    font-size: 1.8rem;
+  }
+
+  .about-para,
+  .about-para1 {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  .about-image .h-28 {
+    flex-direction: column;
+  }
+
+  .connect-me {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
